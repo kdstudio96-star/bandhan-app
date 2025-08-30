@@ -5,61 +5,12 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bandhan: Where Trust Meets Tradition</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              'trust-blue': '#1E3A8A',
-              'tradition-gold': '#D97706',
-              'warm-beige': '#F3E1B0',
-              'light-beige': '#FFFBEB',
-            },
-            fontFamily: {
-              sans: ['Poppins', 'sans-serif'],
-            },
-             keyframes: {
-                shimmer: {
-                  '100%': { transform: 'translateX(100%)' },
-                },
-                float: {
-                    '0%, 100%': { transform: 'translateY(0)' },
-                    '50%': { transform: 'translateY(-10px)' },
-                }
-            },
-            animation: {
-                shimmer: 'shimmer 1.5s infinite',
-                float: 'float 3s ease-in-out infinite',
-            }
-          }
-        }
-      }
-    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.1.1",
-    "react/": "https://aistudiocdn.com/react@^19.1.1/",
-    "react-dom": "https://aistudiocdn.com/react-dom@^19.1.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
-    "framer-motion": "https://esm.sh/framer-motion@11.2.10?external=react",
-    "lucide-react": "https://esm.sh/lucide-react@0.395.0?external=react",
-    "@netlify/functions": "https://aistudiocdn.com/@netlify/functions@^4.2.5",
-    "buffer": "https://aistudiocdn.com/buffer@^6.0.3",
-    "@netlify/blobs": "https://aistudiocdn.com/@netlify/blobs@^10.0.10",
-    "crypto": "https://aistudiocdn.com/crypto@^1.0.1",
-    "@netlify/neon": "https://aistudiocdn.com/@netlify/neon@^0.1.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+  </head>
   <body class="bg-light-beige text-gray-800">
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
