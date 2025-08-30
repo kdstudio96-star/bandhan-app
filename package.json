@@ -1,0 +1,13 @@
+{
+  "name": "bandhan-app",
+  "version": "1.0.0",
+  "description": "Bandhan Matchmaking App with a serverless backend.",
+  "private": true,
+  "dependencies": {
+    "@netlify/neon": "^2.0.1",
+    "@netlify/blobs": "^7.5.1"
+  },
+  "devDependencies": {
+    "@netlify/functions": "^2.7.0"
+  }
+}
