@@ -1,13 +1,16 @@
-{
-  "name": "bandhan-app",
-  "version": "1.0.0",
-  "description": "Bandhan Matchmaking App with a serverless backend.",
-  "private": true,
-  "dependencies": {
-    "@netlify/neon": "^2.0.1",
-    "@netlify/blobs": "^7.5.1"
-  },
-  "devDependencies": {
-    "@netlify/functions": "^2.7.0"
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bandhan: Where Trust Meets Tradition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-light-beige text-gray-800">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
