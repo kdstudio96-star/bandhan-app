@@ -1,22 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bandhan: Where Trust Meets Tradition</title>
-
-    <!-- Load Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="bg-light-beige text-gray-800 font-sans">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'trust-blue': '#1E3A8A',
+              'tradition-gold': '#D97706',
+              'warm-beige': '#F3E1B0',
+              'light-beige': '#FFFBEB',
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+             keyframes: {
+                shimmer: {
+                  '100%': { transform: 'translateX(100%)' },
+                },
+                float: {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-10px)' },
+                }
+            },
+            animation: {
+                shimmer: 'shimmer 1.5s infinite',
+                float: 'float 3s ease-in-out infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react/jsx-runtime": "https://esm.sh/react@18.3.1/jsx-runtime",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "framer-motion": "https://esm.sh/framer-motion@11.2.10?external=react,react-dom",
+    "lucide-react": "https://esm.sh/lucide-react@0.395.0?external=react"
+  }
+}
+</script>
+</head>
+  <body class="bg-light-beige text-gray-800">
     <div id="root"></div>
-    <!-- Vite will replace this with the compiled React bundle -->
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
